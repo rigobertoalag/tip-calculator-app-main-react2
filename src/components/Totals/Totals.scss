@@ -1,0 +1,45 @@
+@import '../../App.scss';
+
+.tip-container{
+    background-color: $Verydarkcyan;
+    margin: 1em 0.5em;
+    border-radius: 1em;
+    padding: 0 1.5em;
+    color: $White;
+}
+
+.tip-amount-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tip-amount-label{
+    display: flex;
+    flex-direction: column;
+}
+
+.tip-subtitle{
+    color: $Grayishcyan;
+    font-size: small;
+}
+.tip-total{
+    color: $Strongcyan;
+    font-size: xx-large;
+}
+
+.reset-btn{
+    border: none;
+    border-radius: 0.5em;
+    color: $Verydarkcyan;
+    background-color: $Darkgrayishcyan;
+    width: 100%;
+    height: 2.5em;
+    font-family: "Space Mono", monospace;
+    font-size: large;
+}
+
+.tip-main{
+    height: 85%;
+}

@@ -4,6 +4,7 @@ import {
   decrement,
   increment,
   incrementByAmount,
+  sendMessage,
   incrementAsync,
   incrementIfOdd,
   selectCount,
@@ -16,6 +17,18 @@ export function Counter() {
   const [incrementAmount, setIncrementAmount] = useState('2');
 
   const incrementValue = Number(incrementAmount) || 0;
+
+
+
+
+
+
+  const valorInicial = useSelector((state) => state.counter.valorInicial)
+  const [valor, setValor] = useState("")
+
+  const valorUsuario = String(valor) || ''
+
+  console.log(`Valor inicial: ${valorInicial}`)
 
   return (
     <div>
@@ -62,6 +75,15 @@ export function Counter() {
           Add If Odd
         </button>
       </div>
+
+      <label>Ingresa datos</label>
+      <input type="text" value={valor} onChange={(e)=>setValor(e.target.value)}/>
+      <button
+          className={styles.button}
+          onClick={() => dispatch(sendMessage(valorUsuario))}
+        >
+          Add message
+        </button>
     </div>
   );
 }

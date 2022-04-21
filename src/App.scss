@@ -1,0 +1,65 @@
+// # Front-end Style Guide
+
+// ## Layout
+
+// The designs were created to the following widths:
+
+$Mobile: 375px;
+$Desktop: 1440px;
+
+// ## Colors
+
+// ### Primary
+
+$Strongcyan: hsl(172, 67%, 45%);
+
+// ### Neutral
+
+$Verydarkcyan: hsl(183, 100%, 15%);
+$Darkgrayishcyan: hsl(186, 14%, 43%);
+$Grayishcyan: hsl(184, 14%, 56%);
+$Lightgrayishcyan: hsl(185, 41%, 84%);
+$Verylightgrayishcyan: hsl(189, 41%, 97%);
+$White: hsl(0, 0%, 100%);
+
+// ## Typography
+
+// ### Body Copy
+
+$Fontsize: 24px; //(form inputs)
+
+// ### Font
+
+// - Family: [Space Mono](https://fonts.google.com/specimen/Space+Mono)
+$Weights: 700;
+
+body {
+  margin: 0;
+  background-color: $Lightgrayishcyan;
+  font-family: "Space Mono", monospace;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-title {
+  color: $Verydarkcyan;
+}
+
+.app-container {
+  background-color: $White;
+  height: 50%;
+  width: 50%;
+  border-radius: 1em;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  padding: 1em 1.5em;
+}
