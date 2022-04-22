@@ -21,6 +21,7 @@ $Grayishcyan: hsl(184, 14%, 56%);
 $Lightgrayishcyan: hsl(185, 41%, 84%);
 $Verylightgrayishcyan: hsl(189, 41%, 97%);
 $White: hsl(0, 0%, 100%);
+$Error: rgb(180, 0, 0);
 
 // ## Typography
 
@@ -62,4 +63,26 @@ body {
   grid-template-columns: 1fr 1fr;
 
   padding: 1em 1.5em;
+}
+
+@media (max-width: 425px) {
+  .app-title {
+    margin-top: 1em;
+  }
+  .app-container {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }

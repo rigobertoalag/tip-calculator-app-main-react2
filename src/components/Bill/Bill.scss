@@ -1,60 +1,113 @@
-@import '../../App.scss';
+@import "../../App.scss";
 
-.bill-container{
-    margin-right: 2em;
+.bill-container {
+  margin-right: 2em;
 }
 
-.b-title{
-    color: $Grayishcyan;
+.b-title {
+  color: $Grayishcyan;
 }
-.b-input, input::placeholder{
-    color: $Grayishcyan;
-    border: none;
-    font-size: large;
-    text-align: right;
-    font-family: "Space Mono", monospace;
+.b-input,
+input::placeholder {
+  color: $Grayishcyan;
+  border: none;
+  font-size: large;
+  text-align: right;
+  font-family: "Space Mono", monospace;
+  width: 95%;
+  outline: none;
+}
+
+.bill-input {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 1.5em 2em;
+}
+
+.bill-select-tip {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5em;
+  margin-bottom: 2em;
+}
+.bill-tip-btn {
+  border: none;
+  height: 2.5em;
+  border-radius: 0.5em;
+  background-color: $Verydarkcyan;
+  font-size: large;
+  font-family: "Space Mono", monospace;
+  color: $White;
+
+  cursor: pointer;
+}
+
+.bill-tip-btn:hover {
+  background-color: $Lightgrayishcyan;
+  color: $Verydarkcyan;
+}
+
+.tip-custom {
+  background-color: $White;
+  color: $Grayishcyan;
+}
+
+.active {
+  border: 2px solid $Strongcyan;
+  padding: 0.5em;
+  margin: 0;
+  border-radius: 0.5em;
+}
+
+.active-i {
+  font-size: larger;
+  color: $Verydarkcyan;
+}
+
+.active-btn {
+  background-color: $Lightgrayishcyan;
+  color: $Verydarkcyan;
+}
+
+.error {
+  border: 2px solid $Error;
+  padding: 0.5em;
+  margin: 0;
+  border-radius: 0.5em;
+}
+
+.b-title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.title-error {
+  color: $Error;
+  font-size: x-small;
+}
+
+@media (max-width: 425px) {
+  .bill-container {
+    width: 90%;
+    height: 100%;
+    margin-right: 0;
+    margin-top: 1em;
+    padding: 1em;
+  }
+  .bill-select-tip {
+    grid-template-columns: 1fr 1fr;
+  }
+  .bill-input {
     width: 95%;
-}
-
-.bill-input{
-    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0 1.5em 2em;
-}
-
-.bill-select-tip{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 0.5em;
-    margin-bottom: 2em;
-}
-.bill-tip-btn{
-    border: none;
-    height: 2.5em;
-    border-radius: 0.5em;
-    background-color: $Verydarkcyan;
-    font-size: large;
-    font-family: "Space Mono", monospace;
-    color: $White;
-
-    cursor: pointer;
-}
-
-.tip-custom{
-    background-color: $White;
-    color: $Grayishcyan;
-}
-
-.active{
-    border: 2px solid $Strongcyan;
-    padding: 0.5em;
-    margin: 0;
-    border-radius: 0.5em;
-}
-
-.active-i{
-    font-size: larger;
-    color: $Verydarkcyan;
+    padding: 0 ;
+    // border: 1px solid red;
+  }
 }
